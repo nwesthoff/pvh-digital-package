@@ -431,6 +431,7 @@ const IndexPage = () => (
     <PersonaCarousel />
     <PageWrapper>
       <ContentContainer>
+        {/* FIXME: Add images of prototype */}
         <h3>Prototypes</h3>
         <p>
           These key takeaways and the brief lead us to find our problem
@@ -468,9 +469,13 @@ const IndexPage = () => (
         </LinkButton>
 
         <p>
-          Manifest: A digital wardrobe with digital trendy clothes and a
+          <b>Manifest</b>: A digital wardrobe with digital trendy clothes and a
           subscription to use exclusive pieces.
         </p>
+        <figure>
+          <video src="/img/digital-fashion-prototype.mp4" autoPlay muted loop />
+          <figcaption>Figure: Our prototype to test Digital Fashion</figcaption>
+        </figure>
         <p>
           Connecting causes and an endless wardrobe to share contents and become
           a more conscious person.
