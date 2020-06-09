@@ -4,6 +4,29 @@ import { PageWrapper } from "../components/PageWrapper";
 import ContentContainer from "../components/ContentContainer";
 import Microlink from "@microlink/react";
 import styled from "styled-components";
+import { theme } from "../config/theme";
+import { transparentize } from "polished";
+import { MdSmartphone } from "react-icons/md";
+
+const LinkButton = styled.a`
+  background: ${(props: { color?: string }) =>
+    transparentize(0.95, props.color || theme.colors.primary)};
+  padding: 1.2rem 2rem;
+  color: ${(props: { color?: string }) => props.color || theme.colors.primary};
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.4rem 0.8rem;
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  &:hover {
+    background: ${(props) =>
+      transparentize(0.85, props.color || theme.colors.primary)};
+  }
+`;
 
 const LinkGrid = styled.div`
   display: flex;
@@ -295,6 +318,32 @@ const IndexPage = () => (
           also your beliefs For me fashion is content, it's a story I consume
           and expose to others. It's like watching a movie or reading a book
         </p>
+      </ContentContainer>
+      <ContentContainer>
+        <h3>Prototypes</h3>
+        <LinkButton
+          href="https://framer.com/share/Wearby-y991fGX5lY5J08zcTOqD?fullscreen=1"
+          color={theme.colors.azure}
+          target="blank"
+        >
+          <MdSmartphone />
+          Prototype 1
+        </LinkButton>
+        <LinkButton
+          href="https://framer.com/share/Digital-Clothes-g6MgvoodoVkwO28Uvuvc?fullscreen=1"
+          color={theme.colors.violet}
+          target="blank"
+        >
+          <MdSmartphone />
+          Prototype 2
+        </LinkButton>
+        <LinkButton
+          href="https://framer.com/share/Manifest-aPC34vm0dLqf2BJAJxU3?fullscreen=1"
+          target="blank"
+        >
+          <MdSmartphone />
+          Prototype 3
+        </LinkButton>
       </ContentContainer>
     </PageWrapper>
   </Layout>

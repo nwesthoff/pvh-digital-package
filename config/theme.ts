@@ -1,7 +1,10 @@
 export const theme = {
   colors: {
-    primary: "#FF3F56",
-    secondary: "#3BC5FF",
+    primary: "#FB5607",
+    violet: "#8338EC",
+    pink: "#FF006E",
+    mango: "#FFBE0B",
+    azure: "#3A86FF",
     backgroundDark: "#222",
   },
   breakpoints: {
