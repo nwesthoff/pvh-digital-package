@@ -16,7 +16,7 @@ const FlickitySlide = styled.div`
 `;
 
 const StyledPersonaCard = styled.div`
-  background: white;
+  background: #222;
   border-radius: 5px;
   display: flex;
   flex-flow: wrap;

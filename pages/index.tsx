@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { theme } from "../config/theme";
 import { transparentize } from "polished";
 import { MdSmartphone } from "react-icons/md";
+import PersonaCarousel from "../components/Personas";
 
 const LinkButton = styled.a`
   background: ${(props: { color?: string }) =>
@@ -35,6 +36,7 @@ const LinkGrid = styled.div`
   margin: 0 -0.4rem;
 
   & > a {
+    min-width: 260px;
     flex-basis: 30%;
     flex-grow: 1;
     margin: 0.8rem;
@@ -413,7 +415,7 @@ const IndexPage = () => (
             look different with my day-to-day clothing
           </li>
         </ul>
-        <h4>12. The needs addressed by fashion</h4>{" "}
+        <h4>12. The needs addressed by fashion</h4>
         <ul>
           <li>
             The way you dress expresses not only your aesthetic preferences but
@@ -425,6 +427,9 @@ const IndexPage = () => (
           </li>
         </ul>
       </ContentContainer>
+    </PageWrapper>
+    <PersonaCarousel />
+    <PageWrapper>
       <ContentContainer>
         <h3>Prototypes</h3>
         <p>

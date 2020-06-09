@@ -7,20 +7,19 @@ import PersonaCard from "./PersonaCard";
 const PersonaHeading = styled.div`
   h2,
   p {
-    color: white;
+    color: black;
     margin: 0;
   }
 `;
 
 const PersonaComponentWrapper = styled.div`
   overflow: hidden;
-  color: black;
+  color: white;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  background: linear-gradient(#000, #121212, #000);
   padding: 4rem 0rem;
 
   @media (max-width: ${theme.breakpoints.phone}px) {
