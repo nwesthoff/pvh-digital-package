@@ -91,8 +91,8 @@ const IndexPage = () => (
           <li>Digital Parties</li>
           <li>AR - try-on</li>
           <li>
-            Comfy - ‘inactive-wear’; really comfortable clothes for wearing at
-            home.
+            Comfy -&nbsp;‘inactive-wear’; really comfortable clothes for wearing
+            at home.
           </li>
           <li>3D printing</li>
           <li>New kinds of Influencers</li>
@@ -132,12 +132,21 @@ const IndexPage = () => (
             all under consideration
           </li>
           <li>Purpose-driven companies</li>
-
           <li>
-            Digital Clothes: a solution to one of the world’s major eco problems
-            might involve creating clothes that don’t actually exist. digital
-            fashion, which refers to 3D-rendered garments that only exist
-            virtually, is a very real idea that offers much greener, zero-waste
+            DIGITAL CLOTHES: a solution to one of the world’s major eco problems
+            might involve creating{" "}
+            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/fashion-design-phenomenons/&amp;sa=D&amp;ust=1591717797296000">
+              clothes
+            </a>{" "}
+            that don’t actually exist.{" "}
+            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/fashion-technology/&amp;sa=D&amp;ust=1591717797297000">
+              Digital fashion
+            </a>
+            , which refers to 3D-rendered garments that only exist{" "}
+            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/virtual-and-augmented-reality/&amp;sa=D&amp;ust=1591717797297000">
+              virtually
+            </a>
+            , is a very real idea that offers much greener, zero-waste
             alternatives in a world with growing fears over waste and concerns
             about the negative effects of manufacturing.
           </li>
@@ -178,29 +187,52 @@ const IndexPage = () => (
             <a href="https://wtvox.com/sustainable-fashion/sustainable-fashion-influencers/">
               source
             </a>
+            )
           </span>
         </blockquote>
       </ContentContainer>
 
       <ContentContainer>
         <h3>Numbers</h3>
-        The fashion industry produces 10% of all humanity’s carbon emissions and
-        is the second-largest consumer of the world’s water supply. Here are the
-        most significant impacts fast fashion has on the planet. Clothing
-        production has roughly doubled since 2000. While people bought 60% more
-        garments in 2014 than in 2000, they only kept the clothes for half as
-        long. In Europe, fashion companies went from an average offering of two
-        collections per year in 2000 to five in 2011. Some brands offer even
-        more. Zara puts out 24 collections per year, while H&M offers between 12
-        and 16. A lot of this clothing ends up in the dump. The equivalent of
-        one garbage truck full of clothes is burned or dumped in a landfill
-        every second. In total, up to 85% of textiles go into landfills each
-        year. That’s enough to fill the Sydney harbour annually. Washing
-        clothes, meanwhile, releases 500,000 tons of microfibers into the ocean
-        each year — the equivalent of 50 billion plastic bottles. Many of those
-        fibres are polyester, a plastic found in an estimated 60% of garments.
-        Producing polyester releases two to three times more carbon emissions
-        than cotton, and polyester does not break down in the ocean.
+        <p>
+          The fashion industry produces 10% of all humanity’s carbon emissions
+          and is the second-largest consumer of the world’s water supply.
+        </p>
+        <p>
+          Here are the most significant impacts fast fashion has on the planet.
+        </p>
+        <p>Clothing production has roughly doubled since 2000.</p>
+        <p>
+          While people bought 60% more garments in 2014 than in 2000, they only
+          kept the clothes for half as long.
+        </p>
+        <p>
+          In Europe, fashion companies went from an average offering of two
+          collections per year in 2000 to five in 2011.
+        </p>
+        <p>
+          Some brands offer even more. Zara puts out 24 collections per year,
+          while H&M offers between 12 and 16.
+        </p>
+        <p>
+          A lot of this clothing ends up in the dump. The equivalent of one
+          garbage truck full of clothes is burned or dumped in a landfill every
+          second.
+        </p>
+        <p>
+          In total, up to 85% of textiles go into landfills each year. That’s
+          enough to fill the Sydney harbour annually.
+        </p>
+        <p>
+          Washing clothes, meanwhile, releases 500,000 tons of microfibers into
+          the ocean each year — the equivalent of 50 billion plastic bottles.
+        </p>
+        <p>
+          Many of those fibres are polyester, a plastic found in an estimated
+          60% of garments. Producing polyester releases two to three times more
+          carbon emissions than cotton, and polyester does not break down in the
+          ocean.
+        </p>
         <figure>
           <img src="/img/waste-clothing.png" loading="lazy" />
           <figcaption>
@@ -235,92 +267,177 @@ const IndexPage = () => (
       <ContentContainer>
         <h2>Primary Research</h2>
         <p>
-          Over the weeks of work, we did deep interviews with 18 people with a
+          Over the weeks of work, we did deep interviews with 19 people from
           different background as a 3D designer, digital influencer, owner of
           futuristic clothes, young conscious people, B Corporations leader,
           people from industry of retail, owner of thrift clothes, young social
           media users, young psychologist, digital fashion designer, a guru of
-          community management and digital artist. In the first week of primary
-          research, we talked with users and experts in the field and questioned
-          broad issues around fashion, sustainability, the behaviour of buying
-          and selling. As a summary of the result of their thoughts, we found
-          these key takeaways.
+          community management and digital artist.
         </p>
         <p>
-          <h3>1. Digital & physical fashion are converging</h3>
-          <p>
-            You can show that you belong to a certain subculture with digital
-            clothes. Spark AR with new computer vision technology gives a lot of
-            freedom to actually merge physical clothing and digital extras from
-            brands.
-          </p>
-          <h3>2. Challenges which digital fashion face</h3>
-          <ul>
-            <li>You can not touch and sense digital clothes.</li>
-            <li> Now: the main motivation is just trying something new.</li>
-            <li>
-              Future: mainstream. People don't like the idea of wearing basic
-              digital stuff by mass-market brands.
-            </li>
-            <li>
-              Digital fashion will remain niche and artsy if it will not be
-              promoted by big brands.
-            </li>
-            <li>
-              It's manual labour now: you design the personalized piece of
-              clothing and then fit it to the photo, considering the light
-              sources, etc.
-            </li>
-          </ul>
-          <h3>Shifting to a digital-first approach</h3>
-          <ul>
-            <li>Now it's mostly manual labour, but the future is AI.</li>
-            <li>
-              If fashion brands will apply a digital-first approach, they can do
-              more inclusive digital fashion shows.
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          Fun to have a nice spectrum of colours on your body. Digital as an
-          eco-friendly & accessible alternative to physical fashion Digital
-          fashion democratizes high fashion and makes it accessible to more
-          people. Digital fashion is eco fashion, there's no waste and it's
-          carbon-neutral. Digital fashion as a subscription: several looks per
-          month. DIY going mainstream? Imagine that you can make shorts out of
-          your jeans, and it's planned by the manufacturer. Handmade clothes are
-          really easy to sell. Second-hand clothes: exclusivity and
-          sustainability More and more people are moving towards the sustainable
-          side, more and more people are caring about these issues. Second-hand
-          fashion is: elegance and exclusivity. Desire to support small, local
-          and independent businesses/designers Prefers to buy from Local - micro
-          manufacturers - quality better, and support value-driven businesses.
-          Small companies with a strong culture can boost big players in the
-          industry. Secondary production is eco and on the edge, but you can't
-          scale it. Potential roles of brands to transition to sustainable
-          options Future is personal, brands will gather data about us and offer
-          personalized looks. Communication is the key to changing people's
-          behaviour. What about a brand that can speak directly to you as a
-          friend? Behaviour paradox: minimalism x impulse to buy Following
-          minimalism isn't easy, you need to be creative. Maybe living on less
-          would be better. People buy for pleasure and impulse. Value and
-          Sustainability at the core level Sustainability is not only about the
-          manufacturing process. It's also about values you translate. Necessary
-          to change the measurement of success. Companies have to create a
-          mission that has sustainability at the core. The challenge of B Corps
-          certification is to break the bubble and reach other companies (that
-          the core business is questionable). Ways to increase the physical and
-          fashion life-span of clothes Clothes that you can recolour every year
-          Functional clothing with a lifetime warranty is ok. But I want to look
-          different with my day-to-day clothing The needs addressed by fashion
-          The way you dress expresses not only your aesthetic preferences but
-          also your beliefs For me fashion is content, it's a story I consume
-          and expose to others. It's like watching a movie or reading a book
+          In the first week of primary research, we talked with users and
+          experts in the field and questioned broad issues around fashion,
+          sustainability, the behaviour of buying and selling. As a summary of
+          the result of their thoughts, we found these key takeaways.
         </p>
+        <h4>1. Digital & physical fashion are converging</h4>
+        <ul>
+          <li>
+            You can show that you belong to a certain subculture with digital
+            clothes.
+          </li>
+          <li>
+            Spark AR with new computer vision technology gives a lot of freedom
+            to actually merge physical clothing and digital extras from brands.
+          </li>
+        </ul>
+        <h4>2. Challenges which digital fashion face</h4>
+        <ul>
+          <li>You can not touch and sense digital clothes.</li>
+          <li>
+            Now: the main motivation is just trying something new. Future:
+            mainstream.
+          </li>
+          <li>
+            People don't like the idea of wearing basic digital stuff by
+            mass-market brands.
+          </li>
+          <li>
+            Digital fashion will remain niche and artsy if it will not be
+            promoted by big brands.
+          </li>
+          <li>
+            It's manual labour now: you design the personalized piece of
+            clothing and then fit it to the photo, considering the light
+            sources, etc.
+          </li>
+        </ul>
+        <h4>3. Shifting to a digital-first approach</h4>
+        <ul>
+          <li>Now it's mostly manual labour, but the future is AI.</li>
+          <li>
+            If fashion brands will apply a digital-first approach, they can do
+            more inclusive digital fashion shows.
+          </li>
+          <li>Fun to have a nice spectrum of colours on your body.</li>
+        </ul>
+        <h4>
+          4. Digital as an eco-friendly & accessible alternative to physical
+          fashion
+        </h4>
+        <ul>
+          <li>
+            Digital fashion democratizes high fashion and makes it accessible to
+            more people.
+          </li>
+          <li>
+            Digital fashion is eco fashion, there's no waste and it's
+            carbon-neutral.
+          </li>
+          <li>Digital fashion as a subscription: several looks per month.</li>
+        </ul>
+        <h4>5. DIY going mainstream?</h4>
+        <ul>
+          <li>
+            Imagine that you can make shorts out of your jeans, and it's planned
+            by the manufacturer.
+          </li>
+          <li>Handmade clothes are really easy to sell.</li>
+        </ul>
+        <h4>6. Second-hand clothes: exclusivity and sustainability</h4>
+        <ul>
+          <li>
+            More and more people are moving towards the sustainable side, more
+            and more people are caring about these issues.
+          </li>
+          <li>Second-hand fashion is: elegance and exclusivity.</li>
+        </ul>
+        <h4>
+          7. Desire to support small, local and independent businesses/designers
+        </h4>
+        <ul>
+          <li>
+            Prefers to buy from Local - micro manufacturers - quality better,
+            and support value-driven businesses.
+          </li>
+          <li>
+            Small companies with a strong culture can boost big players in the
+            industry.
+          </li>
+          <li>
+            Secondary production is eco and on the edge, but you can't scale it.
+          </li>
+        </ul>
+        <h4>
+          8. Potential roles of brands to transition to sustainable options
+        </h4>
+        <ul>
+          <li>
+            Future is personal, brands will gather data about us and offer
+            personalized looks.
+          </li>
+          <li>Communication is the key to changing people's behaviour.</li>
+          <li>
+            What about a brand that can speak directly to you as a friend?
+          </li>
+        </ul>
+        <h4>9. Behaviour paradox: minimalism x impulse to buy</h4>
+        <ul>
+          <li>Following minimalism isn't easy, you need to be creative.</li>
+          <li>Maybe living on less would be better.</li>
+          <li>People buy for pleasure and impulse.</li>
+        </ul>
+        <h4>10. Value and Sustainability at the core level</h4>
+        <ul>
+          <li>
+            Sustainability is not only about the manufacturing process. It's
+            also about values you translate.
+          </li>
+          <li>Necessary to change the measurement of success.</li>
+          <li>
+            Companies have to create a mission that has sustainability at the
+            core.
+          </li>
+          <li>
+            The challenge of B Corps certification is to break the bubble and
+            reach other companies (that the core business is questionable).
+          </li>
+        </ul>
+        <h4>
+          11. Ways to increase the physical and fashion life-span of clothes
+        </h4>
+        <ul>
+          <li>Clothes that you can recolour every year</li>
+          <li>
+            Functional clothing with a lifetime warranty is ok. But I want to
+            look different with my day-to-day clothing
+          </li>
+        </ul>
+        <h4>12. The needs addressed by fashion</h4>{" "}
+        <ul>
+          <li>
+            The way you dress expresses not only your aesthetic preferences but
+            also your beliefs
+          </li>
+          <li>
+            For me fashion is content, it's a story I consume and expose to
+            others. It's like watching a movie or reading a book
+          </li>
+        </ul>
       </ContentContainer>
       <ContentContainer>
         <h3>Prototypes</h3>
+        <p>
+          These key takeaways and the brief lead us to find our problem
+          statements:{" "}
+          <b>
+            How might we make people have an endless wardrobe without owning
+            stuff?
+          </b>
+          <br />
+          With this insight and a section of PVH feedback we develop different
+          ideas and prototypes.
+        </p>
         <LinkButton
           href="https://framer.com/share/Wearby-y991fGX5lY5J08zcTOqD?fullscreen=1"
           color={theme.colors.azure}
@@ -344,6 +461,31 @@ const IndexPage = () => (
           <MdSmartphone />
           Prototype 3
         </LinkButton>
+
+        <p>
+          Manifest: A digital wardrobe with digital trendy clothes and a
+          subscription to use exclusive pieces.
+        </p>
+        <p>
+          Connecting causes and an endless wardrobe to share contents and become
+          a more conscious person.
+        </p>
+      </ContentContainer>
+      <ContentContainer>
+        <h3>Interviews</h3>
+        <blockquote>
+          “It would be nice to see yourself in endless combinations of outfits.”
+          <span className="quoteBy">Fernando, 22</span>
+        </blockquote>
+        <blockquote>
+          “People can develop personality in clothing and not always use the
+          same neutral colours.”
+          <span className="quoteBy">Fernando, 22</span>
+        </blockquote>
+        <blockquote>
+          “I'd like to have such endless possibilities — it's freedom.”
+          <span className="quoteBy">Ayrton, 24</span>
+        </blockquote>
       </ContentContainer>
     </PageWrapper>
   </Layout>

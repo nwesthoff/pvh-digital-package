@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     .quoteBy {
       text-align: end;
       display: block;
-      color: white;
+      color: black;
       font-size: 1.2rem;
 
       &:before {
