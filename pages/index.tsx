@@ -532,7 +532,7 @@ const IndexPage = () => (
             height="720"
             frameBorder="0"
             allowFullScreen
-            referrer="no-referrer"
+            // referrer="no-referrer"
           />
         </ResponsiveIFrameContainer>
       </ContentContainer>
