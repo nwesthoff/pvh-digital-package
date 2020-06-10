@@ -9,9 +9,25 @@ import { transparentize } from "polished";
 import { MdSmartphone } from "react-icons/md";
 import PersonaCarousel from "../components/Personas";
 
+const ResponsiveIFrameContainer = styled.div`
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 60%;
+`;
+const ResponsiveIFrame = styled.iframe`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+`;
+
 const LinkButton = styled.a`
   background: ${(props: { color?: string }) =>
-    transparentize(0.95, props.color || theme.colors.primary)};
+    transparentize(0.97, props.color || theme.colors.primary)};
   padding: 1.2rem 2rem;
   color: ${(props: { color?: string }) => props.color || theme.colors.primary};
   text-decoration: none;
@@ -444,29 +460,38 @@ const IndexPage = () => (
           With this insight and a section of PVH feedback we develop different
           ideas and prototypes.
         </p>
-        <LinkButton
-          href="https://framer.com/share/Wearby-y991fGX5lY5J08zcTOqD?fullscreen=1"
-          color={theme.colors.azure}
-          target="blank"
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            flexFlow: "row wrap",
+          }}
         >
-          <MdSmartphone />
-          Prototype 1
-        </LinkButton>
-        <LinkButton
-          href="https://framer.com/share/Digital-Clothes-g6MgvoodoVkwO28Uvuvc?fullscreen=1"
-          color={theme.colors.violet}
-          target="blank"
-        >
-          <MdSmartphone />
-          Prototype 2
-        </LinkButton>
-        <LinkButton
-          href="https://framer.com/share/Manifest-aPC34vm0dLqf2BJAJxU3?fullscreen=1"
-          target="blank"
-        >
-          <MdSmartphone />
-          Prototype 3
-        </LinkButton>
+          <LinkButton
+            href="https://framer.com/share/Wearby-y991fGX5lY5J08zcTOqD?fullscreen=1"
+            color={theme.colors.azure}
+            target="blank"
+          >
+            <MdSmartphone />
+            Prototype 1
+          </LinkButton>
+          <LinkButton
+            href="https://framer.com/share/Digital-Clothes-g6MgvoodoVkwO28Uvuvc?fullscreen=1"
+            color={theme.colors.violet}
+            target="blank"
+          >
+            <MdSmartphone />
+            Prototype 2
+          </LinkButton>
+          <LinkButton
+            href="https://framer.com/share/Manifest-aPC34vm0dLqf2BJAJxU3?fullscreen=1"
+            target="blank"
+          >
+            <MdSmartphone />
+            Prototype 3
+          </LinkButton>
+        </div>
 
         <p>
           <b>Manifest</b>: A digital wardrobe with digital trendy clothes and a
@@ -474,7 +499,7 @@ const IndexPage = () => (
         </p>
         <figure>
           <video src="/img/digital-fashion-prototype.mp4" autoPlay muted loop />
-          <figcaption>Figure: Our prototype to test Digital Fashion</figcaption>
+          <figcaption>Video: Our prototype to test Digital Fashion</figcaption>
         </figure>
         <p>
           Connecting causes and an endless wardrobe to share contents and become
@@ -496,6 +521,20 @@ const IndexPage = () => (
           “I'd like to have such endless possibilities — it's freedom.”
           <span className="quoteBy">Ayrton, 24</span>
         </blockquote>
+      </ContentContainer>
+
+      <ContentContainer wide>
+        <h3>Pitch</h3>
+        <ResponsiveIFrameContainer>
+          <ResponsiveIFrame
+            src="https://www.icloud.com/keynote/0nNSSXm5rlCVRMAVkh5AlthNA?embed=true"
+            width="100%"
+            height="720"
+            frameBorder="0"
+            allowFullScreen
+            referrer="no-referrer"
+          />
+        </ResponsiveIFrameContainer>
       </ContentContainer>
     </PageWrapper>
   </Layout>
