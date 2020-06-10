@@ -6,7 +6,7 @@ import Microlink from "@microlink/react";
 import styled from "styled-components";
 import { theme } from "../config/theme";
 import { transparentize } from "polished";
-import { MdSmartphone } from "react-icons/md";
+import { MdSmartphone, MdWeb } from "react-icons/md";
 import PersonaCarousel from "../components/Personas";
 
 const ResponsiveIFrameContainer = styled.div`
@@ -23,6 +23,7 @@ const ResponsiveIFrame = styled.iframe`
   right: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 `;
 
 const LinkButton = styled.a`
@@ -64,17 +65,22 @@ const IndexPage = () => (
     <PageWrapper>
       <PageIntroduction>
         <h2
-          style={{ marginBottom: ".4rem", opacity: 0.75, fontWeight: "normal" }}
+          style={{
+            marginBottom: ".4rem",
+            color: "#b3b3b3",
+            fontWeight: "normal",
+          }}
         >
           PVH Design Package
         </h2>
         <h1 style={{ marginTop: ".4rem" }}>Digital Fashion</h1>
         <p>
-          This is an interactive and experiential special on{" "}
-          <i>Experience Design</i>. It gives an overview of a design process and
-          the tools that could be used during each step of a design process.
-          Each step of the process will be backed by a case study, that
-          demonstrate the key findings these tools bring. <br />
+          To complement our pitch, we have created this handover package. It's a
+          digest of all the findings, exploration and research we did for this
+          project. It includes secondary research like trend analysis, as well
+          as primary research, interviewing potential users as well as experts.
+          We also show in greater detail the different ideas we explored and how
+          it evolved during our process. <br />
         </p>
         <p
           style={{
@@ -96,6 +102,14 @@ const IndexPage = () => (
           The point of this secondary research was to collect data that deepens
           our understanding of the problem space.
         </p>
+        <p>All our research can be found on our Miro board:</p>
+        <LinkButton
+          color="#ffd02f"
+          target="blank"
+          href="https://miro.com/app/embed/o9J_krZHydI=/?"
+        >
+          <MdWeb style={{ marginRight: ".4rem" }} /> Miro Board
+        </LinkButton>
       </ContentContainer>
       <ContentContainer>
         <h3>Trends+</h3>

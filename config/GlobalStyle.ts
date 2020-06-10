@@ -10,7 +10,10 @@ const GlobalStyle = createGlobalStyle`
   p {
     font-size: 1.2rem;
     line-height: 1.6em;
-    /* color: white; */
+
+    @media (max-width: ${theme.breakpoints.tablet}px) {
+      font-size: 1rem;
+    }
   }
 
   a {
@@ -25,15 +28,23 @@ const GlobalStyle = createGlobalStyle`
     color: ${theme.colors.primary};
 
     @media (max-width: ${theme.breakpoints.phone}px) {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       margin: 2rem 1.2rem;
     }
 
     .quoteBy {
       text-align: end;
       display: block;
-      color: black;
+      color: #b3b3b3;
       font-size: 1.2rem;
+
+      a {
+        color: #b3b3b3;
+
+        &:hover {
+          color: ${theme.colors.primary};
+        }
+      }
 
       &:before {
         content: "— "
@@ -59,8 +70,20 @@ const GlobalStyle = createGlobalStyle`
     font-style: italic;
   }
 
+  h1 {
+    font-size: 6rem;
+   
+    @media (max-width: ${theme.breakpoints.tablet}px) {
+      font-size: 3rem;
+    }
+  }
+
   h2 {
     font-size: 2.5rem;
+
+    @media (max-width: ${theme.breakpoints.tablet}px) {
+      font-size: 1.6rem;
+    }
   }
 
   h3 {
