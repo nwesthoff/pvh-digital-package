@@ -129,8 +129,7 @@ const IndexPage = () => (
           The point of this secondary research was to collect data that deepens
           our understanding of the problem space.
         </p>
-      </ContentContainer>
-      <ContentContainer>
+
         <h3>Trends</h3>
         <h4>Industry</h4>
         <ul>
@@ -284,8 +283,7 @@ const IndexPage = () => (
             .
           </li>
         </ul>
-      </ContentContainer>
-      <ContentContainer>
+
         <h3>Experts</h3>
         <p>
           We were guided by the principle of authenticity to make sure these
@@ -367,9 +365,7 @@ const IndexPage = () => (
             )
           </span>
         </blockquote>
-      </ContentContainer>
 
-      <ContentContainer>
         <h3>Numbers</h3>
         <ul>
           <li>
@@ -414,21 +410,30 @@ const IndexPage = () => (
             in the ocean.
           </li>
         </ul>
-        <figure>
-          <img src="/img/waste-clothing.png" loading="lazy" />
-          <figcaption>
-            Figure: How much clothing do we waste (
-            <a
-              href="https://www.weforum.org/agenda/2019/01/by-the-numbers-the-economic-social-and-environmental-impacts-of-fast-fashion"
-              target="blank"
-            >
-              source
-            </a>
-            )
-          </figcaption>
-        </figure>
       </ContentContainer>
-
+    </PageWrapper>
+    <ImageCarousel
+      imageArr={[
+        {
+          src: "/img/waste-clothing.png",
+          desc: (
+            <span>
+              Figure: How much clothing do we waste (
+              <a
+                href="https://www.weforum.org/agenda/2019/01/by-the-numbers-the-economic-social-and-environmental-impacts-of-fast-fashion"
+                target="blank"
+              >
+                source
+              </a>
+              )
+            </span>
+          ),
+        },
+        { src: "/img/image2.jpg" },
+        { src: "/img/image3.jpg" },
+      ]}
+    />
+    <PageWrapper>
       <ContentContainer wide>
         <h3>Useful Links</h3>
         <LinkGrid>
@@ -624,6 +629,14 @@ const IndexPage = () => (
           </li>
         </ul>
       </ContentContainer>
+      <ContentContainer>
+        <h2>Personas</h2>
+        <p>
+          From these insights, we created 3 personas. They summarised our
+          research, and helped us design a solution that matches the research we
+          have done leading up to the next phase.
+        </p>
+      </ContentContainer>
     </PageWrapper>
     <PersonaCarousel />
     <PageWrapper>
@@ -638,10 +651,12 @@ const IndexPage = () => (
           . Even those who are concerned by environmental issues, still want to
           look different every day — they don’t really want clothes that last
           long (like 5–10 years).
-          <blockquote>
-            “Dresses become old when you’ve worn them twice”
-            <span className="quoteBy">Mia, 16, UK</span>
-          </blockquote>
+        </p>
+        <blockquote>
+          “Dresses become old when you’ve worn them twice”
+          <span className="quoteBy">Mia, 16, UK</span>
+        </blockquote>
+        <p>
           These key takeaways and the brief lead us to find our problem
           statement:{" "}
           <b>
@@ -667,13 +682,13 @@ const IndexPage = () => (
         </p>
       </ContentContainer>
       <ContentContainer>
-        <h3>Prototypes</h3>
+        <h2>Prototypes</h2>
         <p>
-          With this insight and a section of PVH feedback we develop different
+          With this insight and a section of PVH feedback, we develop different
           ideas and prototypes.
         </p>
 
-        <h4>Prototype 1: Wearby</h4>
+        <h3>Prototype 1: Wearby</h3>
         <p>
           A digital wardrobe with digital trendy clothes and a subscription to
           use exclusive pieces.
@@ -702,7 +717,64 @@ const IndexPage = () => (
           </figcaption>
         </figure>
 
-        <h4>Prototype 2</h4>
+        <h4>Feedback</h4>
+        <p>
+          We interviewed young people from 4 countries to test, learn and
+          improve our service.
+        </p>
+        <ol>
+          <li>
+            Cool but just to post a nice photo
+            <blockquote className="small">
+              “I don't think that I would use it so much that it would be worth
+              $15 a month.”
+              <span className="quoteBy">Aileen, 24 yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “That kind of fabric [shiny metallic], you can't get this kind of
+              look from fabric, so that's really cool to have it on digital and
+              make a cool photo of it.”
+              <span className="quoteBy">Aileen, 24 yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “I don’t like to just post a photo on Instagram, but to change a
+              behaviour is powerful.”
+              <span className="quoteBy">Daniela, 19 yrs</span>
+            </blockquote>
+          </li>
+          <li>
+            Digital clothes can allow people to try new things and develop new
+            personalities
+            <blockquote className="small">
+              “Is really important that the clothes resonate with the person
+              using the service.”
+              <span className="quoteBy">Aileen, 24 yrs</span>
+            </blockquote>
+          </li>
+          <li>
+            Endless possibilities are freedom
+            <blockquote className="small">
+              “it would be nice to see yourself in endless combinations of
+              outfits.”
+              <span className="quoteBy">Fernando, 22yrs, Spain</span>
+            </blockquote>
+            <blockquote className="small">
+              “I'd like to have such endless possibilities — it's freedom.”
+              <span className="quoteBy">Artyom, 24</span>
+            </blockquote>
+            <blockquote className="small">
+              “I would love to try some digital fashion, which I would not be so
+              brave to wear outside.”
+              <span className="quoteBy">Elya, 27 yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “I like the idea of more test & learning experiences without
+              wasting things.”
+              <span className="quoteBy">Daniela, 19 yrs</span>
+            </blockquote>
+          </li>
+        </ol>
+        <h3>Prototype 2</h3>
         <p>
           A digital wardrobe and a treasure hunt to find digital clothes to use
           in specific places around the world connecting people, brands and
@@ -727,12 +799,109 @@ const IndexPage = () => (
             loop
             controls={true}
           />
-          <figcaption>Video: Our prototype to test digital fashion</figcaption>
+          <figcaption>
+            Video: Our prototype to test a digital fashion hunt
+          </figcaption>
         </figure>
-        <h4>Prototype 3: Manifest</h4>
+        <h4>Feedback</h4>
         <p>
-          Connecting causes and an endless wardrobe to share contents and become
-          a more conscious person.
+          Our second phase of collecting user feedback was done to test another
+          prototype which integrated an endless wardrobe with a treasure hunt
+          experience. Here are the main takeaways:
+        </p>
+        <ol>
+          <li>
+            People want to be better for the world
+            <blockquote className="small">
+              “If it helps people to become more conscious about consumerism, it
+              is really nice.”
+              <span className="quoteBy">Diego, 23yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “If this solution connects with social impact many friends will
+              use it.”
+              <span className="quoteBy">Daniela, 19yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “What if you can support a cause or your fav band and buy this
+              piece of digital merchandise?”
+              <span className="quoteBy">Natasha, 23 yrs</span>
+            </blockquote>
+          </li>
+          <li>
+            Your outfit can express what you stand for
+            <blockquote className="small">
+              “I like to post about causes, this year I was really engaged with
+              the Black Lives Matter movement and the fashion revolution.”
+              <span className="quoteBy">Catarina, 18 yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “Fashion is a story I consume and expose to others.”
+              <span className="quoteBy">Daniel, 32 yrs</span>
+            </blockquote>
+          </li>
+          <li>
+            I want to show more content and story behind a piece of clothes
+            <blockquote className="small">
+              “For me, it is important to know how to help a cause and the real
+              story behind, not just a photo.”
+              <span className="quoteBy">Catarina, 18 yrs</span>
+            </blockquote>
+          </li>
+        </ol>
+        <p>
+          For some of our expert interviewees to post a photo is about
+          representation, not just having fun, and for fashion bloggers, it’s
+          like a part-time job. Here are the main takeaways:
+        </p>
+        <ol>
+          <li>
+            Ideas for a new post is wealth
+            <blockquote className="small">
+              “It's cool to use it when you don't have time for ideas for new
+              posts.”
+              <span className="quoteBy">Varya, 20yrs, fashion influencer</span>
+            </blockquote>
+            <blockquote className="small">
+              “During the lockdown, it's hard to be an influencer — stores are
+              closed, and you need to come up with ideas or lose the audience.”
+              <span className="quoteBy">Artyom, 24yrs, stylist</span>
+            </blockquote>
+            <blockquote className="small">
+              “I have to post selfies and outfits in order to demonstrate my
+              social value.”
+              <span className="quoteBy">
+                Yulia, 34 yrs, influencer marketing manager
+              </span>
+            </blockquote>
+          </li>
+          <li>
+            I would like to have exclusive pieces
+            <blockquote className="small">
+              “I'd like to have clothes which you can't find anywhere else.”
+              <span className="quoteBy">Varya, 20yrs</span>
+            </blockquote>
+          </li>
+          <li>
+            Not every brand has a future vision
+            <blockquote className="small">
+              “I think this app is not just for mass-market brands, but mostly
+              for top pieces, luxury brands, hype brands and brands with a
+              future vision.”
+              <span className="quoteBy">Yulia, 34 yrs</span>
+            </blockquote>
+            <blockquote className="small">
+              “Asian fashion is made for this app.”
+              <span className="quoteBy">Varya, 20yrs</span>
+            </blockquote>
+          </li>
+        </ol>
+        <h3>Prototype 3: Manifest</h3>
+        <p>
+          After incorporating the feedback, we created our final solution.
+          <b>Manifest</b>: a digital fashion platform for real-life impact.
+          Connecting causes and an endless wardrobe, so what you wear becomes a
+          statement.
         </p>
         <p>
           Play with:{" "}
@@ -757,21 +926,14 @@ const IndexPage = () => (
             fashion
           </figcaption>
         </figure>
-      </ContentContainer>
-      <ContentContainer>
-        <h3>Interviews</h3>
-        <blockquote>
-          “It would be nice to see yourself in endless combinations of outfits.”
-          <span className="quoteBy">Fernando, 22</span>
+
+        <blockquote className="small">
+          “You guys are solving a real problem.”
+          <span className="quoteBy">Wes</span>
         </blockquote>
-        <blockquote>
-          “People can develop personality in clothing and not always use the
-          same neutral colours.”
-          <span className="quoteBy">Fernando, 22</span>
-        </blockquote>
-        <blockquote>
-          “I'd like to have such endless possibilities — it's freedom.”
-          <span className="quoteBy">Ayrton, 24</span>
+        <blockquote className="small">
+          “Got me excited about the future of fashion!”
+          <span className="quoteBy">Kristin</span>
         </blockquote>
       </ContentContainer>
 

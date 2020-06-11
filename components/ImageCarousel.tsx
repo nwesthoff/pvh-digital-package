@@ -51,6 +51,7 @@ const ImageCarousel = ({ imageArr }: Props) => {
             {imageArr.map((image) => {
               return (
                 <figure
+                  key={image.src}
                   style={{
                     borderRadius: "8px",
                     overflow: "hidden",
@@ -70,18 +71,20 @@ const ImageCarousel = ({ imageArr }: Props) => {
                       objectFit: "cover",
                     }}
                   />
-                  <figcaption
-                    style={{
-                      boxSizing: "border-box",
-                      position: "absolute",
-                      bottom: 0,
-                      background: "rgba(0,0,0,0.6)",
-                      width: "100%",
-                      padding: "1.2rem",
-                    }}
-                  >
-                    {image.desc}
-                  </figcaption>
+                  {image.desc && (
+                    <figcaption
+                      style={{
+                        boxSizing: "border-box",
+                        position: "absolute",
+                        bottom: 0,
+                        background: "rgba(0,0,0,0.6)",
+                        width: "100%",
+                        padding: "1.2rem",
+                      }}
+                    >
+                      {image.desc}
+                    </figcaption>
+                  )}
                 </figure>
               );
             })}

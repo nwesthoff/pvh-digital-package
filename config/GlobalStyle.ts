@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.3em;
     color: ${theme.colors.primary};
 
+    &.small {
+      font-size: 1.4rem;
+    }
+
     @media (max-width: ${theme.breakpoints.phone}px) {
       font-size: 1.3rem;
       margin: 2rem 1.2rem;
