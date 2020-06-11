@@ -14,13 +14,12 @@ const ThreeColumnDiv = styled.div`
   display: flex;
   justify-content: space-between;
   flex-flow: wrap row;
-  margin: -1.2rem 0 0 -1.2rem;
+  margin: -2.4rem 0 0 -2.4rem;
 `;
 
 const Col = styled.div`
-  margin: 1.2rem 0 0 1.2rem;
+  margin: 2.4rem 0 0 2.4rem;
   flex-basis: 30%;
-  gap: 1.2rem;
   flex-grow: 1;
   min-width: 250px;
 
@@ -647,6 +646,8 @@ const IndexPage = () => (
           digital clothes to a photo require&nbsp;a lot of manual labor. Which
           is caused by three things:
         </p>
+      </ContentContainer>
+      <ContentContainer wide>
         <ThreeColumnDiv>
           <Col>
             <h4>1. Body types</h4>
@@ -666,9 +667,13 @@ const IndexPage = () => (
             move with the subject of the photo.
           </Col>
         </ThreeColumnDiv>
+      </ContentContainer>
+      <ContentContainer>
         <br />
         <h3>Solutions</h3>
         <p>To solve these issues, we suggest a few areas of development.</p>
+      </ContentContainer>
+      <ContentContainer wide>
         <ThreeColumnDiv>
           <Col>
             <h4>1. Parametric</h4>
@@ -692,6 +697,8 @@ const IndexPage = () => (
               Uˆ2-Net
             </a>
             .
+            <br />
+            <img alt="Uˆ2-Net model" src="img/U2NETPR.png" />
           </Col>
           <Col>
             <h4>3. Real-time cloth simulation</h4>
@@ -718,6 +725,8 @@ const IndexPage = () => (
             </figure>
           </Col>
         </ThreeColumnDiv>
+      </ContentContainer>
+      <ContentContainer>
         <p>
           To conclude, we're not saying this will be an easy feat. With this
           section we hope to illustrate the current issues that need to be
