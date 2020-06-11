@@ -3,6 +3,36 @@ import styled from "styled-components";
 import { theme } from "../config/theme";
 import Flickity from "react-flickity-component";
 
+const CarouselFigcaption = styled.figcaption`
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 1.2rem;
+
+  @media (max-width: ${theme.breakpoints.phone}px) {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+`;
+
+const CarouselFigure = styled.figure`
+  border-radius: 8px;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  margin: 0 2rem;
+  height: 500px;
+  display: block;
+
+  @media (max-width: ${theme.breakpoints.phone}px) {
+    width: 80%;
+    margin: 0 0.4rem;
+    height: 250px;
+  }
+`;
+
 const ImageCarouselWrapper = styled.div`
   overflow: hidden;
   width: 100%;
@@ -50,18 +80,7 @@ const ImageCarousel = ({ imageArr }: Props) => {
           >
             {imageArr.map((image) => {
               return (
-                <figure
-                  key={image.src}
-                  style={{
-                    borderRadius: "8px",
-                    overflow: "hidden",
-                    width: "50%",
-                    position: "relative",
-                    margin: "0 2rem",
-                    height: "500px",
-                    display: "block",
-                  }}
-                >
+                <CarouselFigure key={image.src}>
                   <img
                     src={image.src}
                     alt={image.alt}
@@ -72,20 +91,9 @@ const ImageCarousel = ({ imageArr }: Props) => {
                     }}
                   />
                   {image.desc && (
-                    <figcaption
-                      style={{
-                        boxSizing: "border-box",
-                        position: "absolute",
-                        bottom: 0,
-                        background: "rgba(0,0,0,0.6)",
-                        width: "100%",
-                        padding: "1.2rem",
-                      }}
-                    >
-                      {image.desc}
-                    </figcaption>
+                    <CarouselFigcaption>{image.desc}</CarouselFigcaption>
                   )}
-                </figure>
+                </CarouselFigure>
               );
             })}
           </Flickity>
