@@ -659,7 +659,7 @@ const IndexPage = () => (
         </blockquote>
         <p>
           These key takeaways and the brief lead us to find our problem
-          statement:{" "}
+          statement: <br />
           <b>
             How might we make people feel they have an endless wardrobe without
             owning stuff?
