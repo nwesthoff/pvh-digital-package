@@ -461,7 +461,6 @@ const IndexPage = () => (
     <PersonaCarousel />
     <PageWrapper>
       <ContentContainer>
-        {/* FIXME: Add images of prototype */}
         <h3>Prototypes</h3>
         <p>
           These key takeaways and the brief lead us to find our problem
@@ -470,18 +469,19 @@ const IndexPage = () => (
             How might we make people have an endless wardrobe without owning
             stuff?
           </b>
-          <br />
+        </p>
+        <p>
           With this insight and a section of PVH feedback we develop different
           ideas and prototypes.
         </p>
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            flexFlow: "row wrap",
-          }}
-        >
+
+        <h4>Prototype 1: Wearby</h4>
+        <p>
+          A digital wardrobe with digital trendy clothes and a subscription to
+          use exclusive pieces.
+        </p>
+        <p>
+          Play with:{" "}
           <LinkButton
             href="https://framer.com/share/Wearby-y991fGX5lY5J08zcTOqD?fullscreen=1"
             color={theme.colors.azure}
@@ -490,6 +490,28 @@ const IndexPage = () => (
             <MdSmartphone />
             Prototype 1
           </LinkButton>
+        </p>
+        <figure>
+          <video
+            src="/img/prototype-1-mockup.mp4"
+            autoPlay
+            muted
+            loop
+            controls={true}
+          />
+          <figcaption>
+            Video: Our prototype to test a digital fashion subscription service
+          </figcaption>
+        </figure>
+
+        <h4>Prototype 2</h4>
+        <p>
+          A digital wardrobe and a treasure hunt to find digital clothes to use
+          in specific places around the world connecting people, brands and
+          places.
+        </p>
+        <p>
+          Play with:{" "}
           <LinkButton
             href="https://framer.com/share/Digital-Clothes-g6MgvoodoVkwO28Uvuvc?fullscreen=1"
             color={theme.colors.violet}
@@ -498,6 +520,24 @@ const IndexPage = () => (
             <MdSmartphone />
             Prototype 2
           </LinkButton>
+        </p>
+        <figure>
+          <video
+            src="/img/prototype-2-mockup.mp4"
+            autoPlay
+            muted
+            loop
+            controls={true}
+          />
+          <figcaption>Video: Our prototype to test digital fashion</figcaption>
+        </figure>
+        <h4>Prototype 3: Manifest</h4>
+        <p>
+          Connecting causes and an endless wardrobe to share contents and become
+          a more conscious person.
+        </p>
+        <p>
+          Play with:{" "}
           <LinkButton
             href="https://framer.com/share/Manifest-aPC34vm0dLqf2BJAJxU3?fullscreen=1"
             target="blank"
@@ -505,26 +545,20 @@ const IndexPage = () => (
             <MdSmartphone />
             Prototype 3
           </LinkButton>
-        </div>
-
-        <p>
-          <b>Manifest</b>: A digital wardrobe with digital trendy clothes and a
-          subscription to use exclusive pieces.
         </p>
         <figure>
           <video
-            src="/img/digital-fashion-prototype.mp4"
+            src="/img/prototype-3-mockup.mp4"
             autoPlay
             muted
             loop
             controls={true}
           />
-          <figcaption>Video: Our prototype to test Digital Fashion</figcaption>
+          <figcaption>
+            Video: Our prototype that drives social impact through digital
+            fashion
+          </figcaption>
         </figure>
-        <p>
-          Connecting causes and an endless wardrobe to share contents and become
-          a more conscious person.
-        </p>
       </ContentContainer>
       <ContentContainer>
         <h3>Interviews</h3>

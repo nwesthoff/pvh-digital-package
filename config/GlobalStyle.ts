@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { theme } from "./theme";
+import { lighten } from "polished";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -89,6 +90,14 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     color: ${theme.colors.primary};
     font-size: 1.5rem;
+  }
+
+  h4 {
+    color: ${lighten(0.15, theme.colors.primary)};
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   body {

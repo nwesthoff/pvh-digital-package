@@ -45,7 +45,7 @@ const Layout: React.FunctionComponent<Props> = ({
         <meta name="msapplication-TileColor" content="#FF3F56" />
         <meta name="theme-color" content="#FF3F56" />
         <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400"
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,700;1,400"
           rel="stylesheet"
         />
         <link
