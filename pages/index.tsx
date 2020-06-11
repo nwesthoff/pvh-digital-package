@@ -7,6 +7,7 @@ import styled from "styled-components";
 import { theme } from "../config/theme";
 import { transparentize } from "polished";
 import { MdSmartphone, MdWeb } from "react-icons/md";
+import { IoLogoInstagram } from "react-icons/io";
 import PersonaCarousel from "../components/Personas";
 import LazyLoad from "react-lazy-load";
 import ImageCarousel from "../components/ImageCarousel";
@@ -680,6 +681,13 @@ const IndexPage = () => (
           fashion rules and standards. We’re focusing mostly on the second type,
           because it’s more about sustainability and less about consumerism.
         </p>
+        <LinkButton
+          color="#e1306c"
+          href="https://www.instagram.com/hypebeast_futures/"
+        >
+          <IoLogoInstagram style={{ marginRight: ".4rem" }} />
+          Instagram
+        </LinkButton>
       </ContentContainer>
       <ContentContainer>
         <h2>Prototypes</h2>
@@ -898,7 +906,7 @@ const IndexPage = () => (
         </ol>
         <h3>Prototype 3: Manifest</h3>
         <p>
-          After incorporating the feedback, we created our final solution.
+          After incorporating the feedback, we created our final solution.{" "}
           <b>Manifest</b>: a digital fashion platform for real-life impact.
           Connecting causes and an endless wardrobe, so what you wear becomes a
           statement.
@@ -961,20 +969,26 @@ const IndexPage = () => (
         <ThreeColumnDiv>
           <Col>
             <h4>1. Body types</h4>
-            Body types vary, and physical clothes come in different sizes. To
-            realistically apply digital clothes to a photo, they have to match
-            the size and body shape of the subject.
+            <p>
+              Body types vary, and physical clothes come in different sizes. To
+              realistically apply digital clothes to a photo, they have to match
+              the size and body shape of the subject.
+            </p>
           </Col>
           <Col>
             <h4>2. Masking</h4>
-            Since part of the clothes realistically end up behind the subject,
-            the subject has to be isolated from the photo in order to
-            convincingly superimpose the model on the subject.
+            <p>
+              Since part of the clothes realistically end up behind the subject,
+              the subject has to be isolated from the photo in order to
+              convincingly superimpose the model on the subject.
+            </p>
           </Col>
           <Col>
             <h4>3. Draping</h4>
-            Textiles are flexible. They have to realistically drape over and
-            move with the subject of the photo.
+            <p>
+              Textiles are flexible. They have to realistically drape over and
+              move with the subject of the photo.
+            </p>
           </Col>
         </ThreeColumnDiv>
       </ContentContainer>
@@ -987,34 +1001,39 @@ const IndexPage = () => (
         <ThreeColumnDiv>
           <Col>
             <h4>1. Parametric</h4>
-            3D fashion has to be parametric; that means, driven by body
-            dimensions. These dimensions have to be inferred from the photo
-            being taken. It's likely necessary to take a few overview photos of
-            the subject before the software will be able to estimate dimensions.{" "}
+            <p>
+              3D fashion has to be parametric; that means, driven by body
+              dimensions. These dimensions have to be inferred from the photo
+              being taken. It's likely necessary to take a few overview photos
+              of the subject before the software will be able to estimate
+              dimensions.
+            </p>
             <img alt="image8" src="img/image8.png" />
           </Col>
           <Col>
             <h4>2. Subject Separation</h4>
-            Currently hardware isn't fast enough to separate a subject from the
-            background in realtime, but a static image is easy to process.
-            Services like <a href="https://www.remove.bg/">remove.bg</a> go a
-            long way to separate subjects. Services like these are likely
-            running on open source AI models to achieve pattern recognition like{" "}
-            <a href="https://github.com/NathanUA/U-2-Net">Uˆ2-Net</a>
-            .
-            <br />
+            <p>
+              Currently hardware isn't fast enough to separate a subject from
+              the background in realtime, but a static image is easy to process.
+              Services like <a href="https://www.remove.bg/">remove.bg</a> go a
+              long way to separate subjects. Services like these are likely
+              running on open source AI models to achieve pattern recognition
+              like <a href="https://github.com/NathanUA/U-2-Net">Uˆ2-Net</a>.
+            </p>
             <img alt="Uˆ2-Net model" src="img/U2NETPR.png" />
           </Col>
           <Col>
             <h4>3. Real-time cloth simulation</h4>
-            Technologies regarding{" "}
-            <a href="https://www.youtube.com/watch?v=wtpPxLmiykk">
-              real-time cloth simulation
-            </a>
-            &nbsp;have come a long way. Which might be a solution, although we
-            foresee it could also be faked by 'pre-crumpling' for a few sizes,
-            which will then be slightly distorted and morphed to fit the subject
-            better.
+            <p>
+              Technologies regarding{" "}
+              <a href="https://www.youtube.com/watch?v=wtpPxLmiykk">
+                real-time cloth simulation
+              </a>
+              &nbsp;have come a long way. Which might be a solution, although we
+              foresee it could also be faked by 'pre-crumpling' for a few sizes,
+              which will then be slightly distorted and morphed to fit the
+              subject better.
+            </p>
             <figure>
               <video
                 src="/img/realtime-cloth-simulation.mp4"
