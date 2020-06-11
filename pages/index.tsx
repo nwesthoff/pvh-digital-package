@@ -129,14 +129,6 @@ const IndexPage = () => (
           The point of this secondary research was to collect data that deepens
           our understanding of the problem space.
         </p>
-        <p>All our research can be found on our Miro board:</p>
-        <LinkButton
-          color="#ffd02f"
-          target="blank"
-          href="https://miro.com/app/embed/o9J_krZHydI=/?"
-        >
-          <MdWeb style={{ marginRight: ".4rem" }} /> Miro Board
-        </LinkButton>
       </ContentContainer>
       <ContentContainer>
         <h3>Trends</h3>
@@ -186,12 +178,8 @@ const IndexPage = () => (
           <li>
             Fashion and beauty brands{" "}
             <a href="https://www.voguebusiness.com/technology/fashion-beauty-brands-taking-ar-seriously">
-              are starting to take AR more
-            </a>{" "}
-            <a href="https://www.voguebusiness.com/technology/fashion-beauty-brands-taking-ar-seriously">
-              seriously
+              are starting to take AR more seriously
             </a>
-            <a href="#cmnt1">[a]</a>
           </li>
         </ul>
       </ContentContainer>
@@ -325,7 +313,13 @@ const IndexPage = () => (
           usefulness for our future. There is always fashion, but the question
           is, what is it going to be, and how do we need clothing, bags,
           jewellery, and accessories in the world to come?”
-          <span className="quoteBy">Marine Serre</span>
+          <span className="quoteBy">
+            Marine Serre (
+            <a href="https://wwd.com/fashion-news/fashion-features/coronavirus-effect-sustainable-1203562958/">
+              source
+            </a>
+            )
+          </span>
         </blockquote>
         <p>
           The next quote is illustrative of the proper mindset change inside the
@@ -448,6 +442,7 @@ const IndexPage = () => (
           <Microlink url="https://www.kleiderly.com/our-blog/impact-of-clothing-waste" />
           <Microlink url="https://www.nature.com/articles/s43017-020-0039-9" />
           <Microlink url="https://www.thedrum.com/opinion/2019/12/05/virtual-influencer-trends-overview-the-industry" />
+          <Microlink url="https://www.nytimes.com/2019/12/17/style/fast-fashion-gen-z.html" />
         </LinkGrid>
       </ContentContainer>
 
@@ -493,22 +488,6 @@ const IndexPage = () => (
             Even heavy consumers see that maybe living on less would be better.
           </li>
           <li>People buy for pleasure. It's an impulsive decision.</li>
-        </ul>
-        <h4>Value and Sustainability at the core level</h4>
-        <ul>
-          <li>
-            Sustainability is not only about the manufacturing process. It's
-            also about values you translate.
-          </li>
-          <li>It's necessary to change the measurement of success.</li>
-          <li>
-            Companies have to create a mission that has sustainability at the
-            core.
-          </li>
-          <li>
-            The challenge of B Corps certification is to break the bubble and
-            reach other companies (that the core business is questionable).
-          </li>
         </ul>
         <h4>Ways to increase the physical and fashion life-span of clothes</h4>
         <ul>
@@ -619,6 +598,22 @@ const IndexPage = () => (
           <li>Communication is the key to changing people's behaviour.</li>
           <li>
             What about a brand that can speak directly to you as a friend?
+          </li>
+        </ul>
+        <h4>Value and Sustainability at the core level</h4>
+        <ul>
+          <li>
+            Sustainability is not only about the manufacturing process. It's
+            also about values you translate.
+          </li>
+          <li>It's necessary to change the measurement of success.</li>
+          <li>
+            Companies have to create a mission that has sustainability at the
+            core.
+          </li>
+          <li>
+            The challenge of B Corps certification is to break the bubble and
+            reach other companies (that the core business is questionable).
           </li>
         </ul>
         <h4>The needs addressed by fashion</h4>
@@ -868,6 +863,20 @@ const IndexPage = () => (
             />
           </ResponsiveIFrameContainer>
         </LazyLoad>
+      </ContentContainer>
+      <ContentContainer>
+        <h2>Last words</h2>
+        <p>
+          If you're done reading everything, and still curious, we have made all
+          of our research available on our Miro board:
+        </p>
+        <LinkButton
+          color="#ffd02f"
+          target="blank"
+          href="https://miro.com/app/embed/o9J_krZHydI=/?"
+        >
+          <MdWeb style={{ marginRight: ".4rem" }} /> Miro Board
+        </LinkButton>
       </ContentContainer>
     </PageWrapper>
   </Layout>

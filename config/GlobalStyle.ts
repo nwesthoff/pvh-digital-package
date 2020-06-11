@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  p {
+  p, li {
     font-size: 1.2rem;
     line-height: 1.6em;
 
