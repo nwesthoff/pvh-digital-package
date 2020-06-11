@@ -193,15 +193,15 @@ const IndexPage = () => (
           <li>
             DIGITAL CLOTHES: a solution to one of the world’s major eco problems
             might involve creating{" "}
-            <a href="https://www.designboom.com/tag/fashion-design-phenomenons/&amp;sa=D&amp;ust=1591717797296000">
+            <a href="https://www.designboom.com/tag/fashion-design-phenomenons/">
               clothes
             </a>{" "}
             that don’t actually exist.{" "}
-            <a href="https://www.designboom.com/tag/fashion-technology/&amp;sa=D&amp;ust=1591717797297000">
+            <a href="https://www.designboom.com/tag/fashion-technology/">
               Digital fashion
             </a>
             , which refers to 3D-rendered garments that only exist{" "}
-            <a href="https://www.designboom.com/tag/virtual-and-augmented-reality/&amp;sa=D&amp;ust=1591717797297000">
+            <a href="https://www.designboom.com/tag/virtual-and-augmented-reality/">
               virtually
             </a>
             , is a very real idea that offers much greener, zero-waste
@@ -625,19 +625,12 @@ const IndexPage = () => (
         <p>
           We see a few prerequisites for Manifest to succeed tech-wise. First,
           relatively fast hardware is needed. Modern android phones are equipped
-          with{" "}
-          <a href="https://developers.google.com/ar/discover&amp;sa=D&amp;ust=1591880583380000">
-            ARCore
-          </a>
+          with <a href="https://developers.google.com/ar/discover">ARCore</a>
           &nbsp;support and iPhones run{" "}
-          <a href="https://developer.apple.com/augmented-reality/&amp;sa=D&amp;ust=1591880583380000">
-            ARKit
-          </a>
+          <a href="https://developer.apple.com/augmented-reality/">ARKit</a>
           &nbsp;and RealityKit. Both of these are already widely supported by 3D
           render engines like Unity and Unreal, and even dedicated AR tools like{" "}
-          <a href="https://sparkar.facebook.com/ar-studio/&amp;sa=D&amp;ust=1591880583380000">
-            SparkAR
-          </a>
+          <a href="https://sparkar.facebook.com/ar-studio/">SparkAR</a>
           &nbsp;exist. These tools lower the barrier to market, and make
           developing Instagram filters trivial.
         </p>
@@ -687,15 +680,10 @@ const IndexPage = () => (
             <h4>2. Subject Separation</h4>
             Currently hardware isn't fast enough to separate a subject from the
             background in realtime, but a static image is easy to process.
-            Services like{" "}
-            <a href="https://www.remove.bg/&amp;sa=D&amp;ust=1591880583381000">
-              remove.bg
-            </a>{" "}
-            go a long way to separate subjects. Services like these are likely
+            Services like <a href="https://www.remove.bg/">remove.bg</a> go a
+            long way to separate subjects. Services like these are likely
             running on open source AI models to achieve pattern recognition like{" "}
-            <a href="https://github.com/NathanUA/U-2-Net&amp;sa=D&amp;ust=1591880583382000">
-              Uˆ2-Net
-            </a>
+            <a href="https://github.com/NathanUA/U-2-Net">Uˆ2-Net</a>
             .
             <br />
             <img alt="Uˆ2-Net model" src="img/U2NETPR.png" />
