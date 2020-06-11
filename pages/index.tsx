@@ -9,6 +9,7 @@ import { transparentize } from "polished";
 import { MdSmartphone, MdWeb } from "react-icons/md";
 import PersonaCarousel from "../components/Personas";
 import LazyLoad from "react-lazy-load";
+import ImageCarousel from "../components/ImageCarousel";
 
 const ThreeColumnDiv = styled.div`
   display: flex;
@@ -138,80 +139,174 @@ const IndexPage = () => (
         </LinkButton>
       </ContentContainer>
       <ContentContainer>
-        <h3>Trends+</h3>
+        <h3>Trends</h3>
+        <h4>Industry</h4>
         <ul>
-          <li>Digital & physical fashion are converging.</li>
-          <li>Values and Sustainability at the core level.</li>
-          <li>Transparency Ethical Values</li>
+          <li>Digital & physical fashion are converging at high speed.</li>
           <li>
-            Desire to support small, local and independent businesses/designers
-          </li>
-          <li>Digital Parties</li>
-          <li>AR - try-on</li>
-          <li>
-            Comfy -&nbsp;‘inactive-wear’; really comfortable clothes for wearing
-            at home.
-          </li>
-          <li>3D printing</li>
-          <li>New kinds of Influencers</li>
-          <li>Co-creation</li>
-          <li>New digital communities</li>
-          <li>Digital Sales</li>
-          <li>Industry's Carbon</li>
-          <li>Sustainable Impact</li>
-          <li>Anti-excess consumerism</li>
-          <li>Slow fashion</li>
-          <li>Digitalization of everything</li>
-          <li>Lower or zero waste lifestyle</li>
-          <li>Values Exchanges (Money, data, power, time, support)</li>
-          <li>Monetary returns to an ORG with each purchase</li>
-          <li>Clothing that lasts long</li>
-          <li>Digital fashion</li>
-        </ul>
-        <h4>Socio-economic, Ecologic & Politics</h4>
-        <ul>
-          <li>Covid-19</li>
-          <li>Physical Stores Close</li>
-          <li>
-            As people settle into self-isolation, consumers have a newfound
-            appreciation for nature + space
+            Fashion industry faces an ‘existential crisis’,{" "}
+            <a href="https://www.theguardian.com/fashion/2020/apr/22/lockdown-fashion-wakeup-call-coronavirus-lockdown">
+              the lockdown has been a wakeup call for the whole industry
+            </a>
+            &nbsp;and Gucci has just announced{" "}
+            <a href="https://www.highsnobiety.com/p/gucci-seasonless/">
+              it is going seasonless
+            </a>
+            .
           </li>
           <li>
-            Post-virus, consumers will seek out brands that they align with
-            morally more than ever before, with an emphasis placed on conscious
-            products.
+            Fashion needs a shared purpose, with a sustainable future as a pole
+            star, as it’s now responsible{" "}
+            <a href="https://www.businessinsider.com/fast-fashion-environmental-impact-pollution-emissions-waste-water-2019-10?r%3DUS%26IR%3DT">
+              for 10% of all humanity's carbon emissions.
+            </a>
           </li>
-          <li>Fashion events are democratized</li>
-          <li>IRL fashion shows</li>
-          <li>100% digital design by 2022</li>
-          <li>Fashion designers are now being trained in 3D design</li>
           <li>
-            Augmented reality, virtual reality and mixed reality solutions are
-            all under consideration
+            ‘Radical transparency’ and ‘ethical fashion’ are no longer
+            buzzwords.
           </li>
-          <li>Purpose-driven companies</li>
           <li>
-            DIGITAL CLOTHES: a solution to one of the world’s major eco problems
-            might involve creating{" "}
-            <a href="https://www.designboom.com/tag/fashion-design-phenomenons/">
-              clothes
+            Fashion is going digital: digital clothes (like{" "}
+            <a href="https://digitalcollection.carlings.com/">Carlings</a>
+            &nbsp;and <a href="https://r-o-h-b-a-u.com/">Rohbau</a>
+            ), virtual fashion shows, virtual influencers,{" "}
+            <a href="https://divante.com/blog/examples-of-ar-powered-virtual-try-ons-in-the-fashion-industry/">
+              AR-powered virtual try-ons
+            </a>
+            .
+          </li>
+          <li>
+            A new way of values exchange are emerging (Money, data, power, time,
+            support).
+          </li>
+          <li>
+            Mainstream brands (like Tommy Hilfiger) are starting to committing
+            to 100% digital design.
+          </li>
+          <li>
+            Fashion and beauty brands{" "}
+            <a href="https://www.voguebusiness.com/technology/fashion-beauty-brands-taking-ar-seriously">
+              are starting to take AR more
             </a>{" "}
-            that don’t actually exist.{" "}
-            <a href="https://www.designboom.com/tag/fashion-technology/">
-              Digital fashion
+            <a href="https://www.voguebusiness.com/technology/fashion-beauty-brands-taking-ar-seriously">
+              seriously
             </a>
-            , which refers to 3D-rendered garments that only exist{" "}
-            <a href="https://www.designboom.com/tag/virtual-and-augmented-reality/">
-              virtually
+            <a href="#cmnt1">[a]</a>
+          </li>
+        </ul>
+      </ContentContainer>
+    </PageWrapper>
+
+    <ImageCarousel
+      imageArr={[
+        {
+          src: "/img/virtual-army.png",
+          desc: (
+            <span>
+              Balmain commissioned the former fashion photographer Cameron-James
+              Wilson to create a “virtual army” of digital models, including,
+              from left, Margot, Shudu and Zhi. (
+              <a
+                href="https://www.balmain.com/lu/balmain/balmains-new-virtual-army"
+                target="blank"
+              >
+                source
+              </a>
+              )
+            </span>
+          ),
+        },
+        {
+          src: "/img/seenowbuynow.png",
+          desc: (
+            <span>
+              Pinko staged a “See Now, Buy Now” runway show, featuring 25 looks
+              from its current collection against a virtual backdrop (
+              <a
+                href="http://www.wearglobalnetwork.com/news/pinko-staged-see-now-buy-now-virtual-runway-show-as-part-of-shanghai-fashion-week/"
+                target="blank"
+              >
+                source
+              </a>
+              ).
+            </span>
+          ),
+        },
+        {
+          src: "/img/coronavirus-store.png",
+          desc: (
+            <span>
+              Kenneth Cole sums up the coronavirus reality while retaining his
+              signature humor (
+              <a
+                href="https://wwd.com/business-news/business-features/fashion-retail-covid-19-coronavirus-bankrtupcies-pandemic-giorgio-armani-saks1203549193-1203549193/"
+                target="blank"
+              >
+                source
+              </a>
+              ).
+            </span>
+          ),
+        },
+      ]}
+    />
+
+    <PageWrapper>
+      <ContentContainer>
+        <h4>Consumer</h4>
+        <ul>
+          <li>
+            Consumers are starting to shift towards supporting small, local and
+            independent brands and designers. &nbsp;
+          </li>
+          <li>
+            <a href="https://www.adweek.com/brand-marketing/influencers-created-world-normal-people-hold-sway/">
+              Tastemaking has been democratized by influencers
             </a>
-            , is a very real idea that offers much greener, zero-waste
-            alternatives in a world with growing fears over waste and concerns
-            about the negative effects of manufacturing.
+            .
+          </li>
+          <li>
+            <a href="https://www.ribbonfarm.com/series/domestic-cozy/">
+              Domestic cosy
+            </a>
+            : as gen Z are more likely to stay at home (not only because of
+            coronavirus), ‘inactive-wear’ is becoming a thing.
+          </li>
+          <li>
+            Internet users are moving from sharing as a method of broadcasting
+            themselves, into a way of sharing{" "}
+            <a href="https://blog.globalwebindex.com/chart-of-the-week/online-communities/">
+              that has community at its heart
+            </a>
+            .
+          </li>
+          <li>
+            A decade-long build-up of bargain shopping culture{" "}
+            <a href="https://www.mckinsey.com/~/media/mckinsey/industries/retail/our%2520insights/its%2520time%2520to%2520rewire%2520the%2520fashion%2520system%2520state%2520of%2520fashion%2520coronavirus%2520update/the-state-of-fashion-2020-coronavirus-update-vf.ashx">
+              will be exacerbated by a rise in anticonsumerism
+            </a>
+            .
+          </li>
+          <li>
+            Consumers seek out brands that they align with morally more than
+            ever before,{" "}
+            <a href="https://edited.com/resources/coronavirus-and-sustainable-fashion/">
+              with an emphasis placed on conscious products
+            </a>
+            .
           </li>
         </ul>
       </ContentContainer>
       <ContentContainer>
         <h3>Experts</h3>
+        <p>
+          We were guided by the principle of authenticity to make sure these
+          quotes offer PVH a first-hand introduction to powerful patterns in the
+          data. According to the fashion industry leaders, the COVID-19
+          pandemic, which has demanded a rethink of so many industry practices,
+          can finally generate an era of slower fashion with fewer seasonal
+          collections, deliveries suited to the weather and fewer markdowns.
+        </p>
         <blockquote>
           “Considering that all of us — I mean us designers — have been
           complaining about the pace of fashion, about the unsustainable speed
@@ -219,6 +314,11 @@ const IndexPage = () => (
           rethink a lot of things, including seasonality.”
           <span className="quoteBy">Donatella Versace</span>
         </blockquote>
+        <p>
+          Designers and business people are supporting fewer, smaller and more
+          season-less collections, and this movement was accelerated in 2020
+          with a global crisis;
+        </p>
         <blockquote>
           “Less garments, less shows, less travel, less logistics transport,
           less but better fabrics — less, less, less but better thinking on
@@ -227,6 +327,10 @@ const IndexPage = () => (
           jewellery, and accessories in the world to come?”
           <span className="quoteBy">Marine Serre</span>
         </blockquote>
+        <p>
+          The next quote is illustrative of the proper mindset change inside the
+          fashion industry and how to address customer needs.
+        </p>
         <blockquote>
           “There could be more of a shift to on-demand production, which is a
           way to mitigate risk, and obviously there is a huge waste-reduction
@@ -235,8 +339,12 @@ const IndexPage = () => (
           responding to consumer demand.”
           <span className="quoteBy">Saskia van Gessen</span>
         </blockquote>
-        When Dominique Drakeford was asked what's most important for a
-        sustainable fashion industry, she said:
+        <p>
+          It is time to rethink new business models, more collaboration and a
+          sense of individual responsibility when it comes to consuming fashion.
+          When Dominique Drakeford was asked what's most important for a
+          sustainable fashion industry, she said:
+        </p>
         <blockquote>
           “People. You, me, us. We have to understand ourselves first before we
           can fix fashion.”
@@ -248,49 +356,70 @@ const IndexPage = () => (
             )
           </span>
         </blockquote>
+        <p>
+          More people are engaging in environmental issues movements, social
+          causes and supporting communities around the world.
+        </p>
+        <blockquote>
+          “But we’re also seeing some of the most beautiful parts of humanity —
+          the global sense of connection, realizing your actions make a
+          difference not just for you and your household, but for the community
+          and public good”
+          <span className="quoteBy">
+            Kathleen Talbot (
+            <a href="https://wwd.com/fashion-news/fashion-features/coronavirus-effect-sustainable-1203562958/">
+              source
+            </a>
+            )
+          </span>
+        </blockquote>
       </ContentContainer>
 
       <ContentContainer>
         <h3>Numbers</h3>
-        <p>
-          The fashion industry produces 10% of all humanity’s carbon emissions
-          and is the second-largest consumer of the world’s water supply.
-        </p>
-        <p>
-          Here are the most significant impacts fast fashion has on the planet.
-        </p>
-        <p>Clothing production has roughly doubled since 2000.</p>
-        <p>
-          While people bought 60% more garments in 2014 than in 2000, they only
-          kept the clothes for half as long.
-        </p>
-        <p>
-          In Europe, fashion companies went from an average offering of two
-          collections per year in 2000 to five in 2011.
-        </p>
-        <p>
-          Some brands offer even more. Zara puts out 24 collections per year,
-          while H&M offers between 12 and 16.
-        </p>
-        <p>
-          A lot of this clothing ends up in the dump. The equivalent of one
-          garbage truck full of clothes is burned or dumped in a landfill every
-          second.
-        </p>
-        <p>
-          In total, up to 85% of textiles go into landfills each year. That’s
-          enough to fill the Sydney harbour annually.
-        </p>
-        <p>
-          Washing clothes, meanwhile, releases 500,000 tons of microfibers into
-          the ocean each year — the equivalent of 50 billion plastic bottles.
-        </p>
-        <p>
-          Many of those fibres are polyester, a plastic found in an estimated
-          60% of garments. Producing polyester releases two to three times more
-          carbon emissions than cotton, and polyester does not break down in the
-          ocean.
-        </p>
+        <ul>
+          <li>
+            The fashion industry produces 10% of all humanity’s carbon emissions
+            and is the second-largest consumer of the world’s water supply.
+          </li>
+          <li>
+            Here are the most significant impacts fast fashion has on the
+            planet.
+          </li>
+          <li>Clothing production has roughly doubled since 2000.</li>
+          <li>
+            While people bought 60% more garments in 2014 than in 2000, they
+            only kept the clothes for half as long.
+          </li>
+          <li>
+            In Europe, fashion companies went from an average offering of two
+            collections per year in 2000 to five in 2011.
+          </li>
+          <li>
+            Some brands offer even more. Zara puts out 24 collections per year,
+            while H&amp;M offers between 12 and 16.
+          </li>
+          <li>
+            A lot of this clothing ends up in the dump. The equivalent of one
+            garbage truck full of clothes is burned or dumped in a landfill
+            every second.
+          </li>
+          <li>
+            In total, up to 85% of textiles go into landfills each year. That’s
+            enough to fill the Sydney harbour annually.
+          </li>
+          <li>
+            Washing clothes, meanwhile, releases 500,000 tons of microfibers
+            into the ocean each year — the equivalent of 50 billion plastic
+            bottles.
+          </li>
+          <li>
+            Many of those fibres are polyester, a plastic found in an estimated
+            60% of garments. Producing polyester releases two to three times
+            more carbon emissions than cotton, and polyester does not break down
+            in the ocean.
+          </li>
+        </ul>
         <figure>
           <img src="/img/waste-clothing.png" loading="lazy" />
           <figcaption>
