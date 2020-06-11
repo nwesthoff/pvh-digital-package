@@ -8,6 +8,7 @@ import { theme } from "../config/theme";
 import { transparentize } from "polished";
 import { MdSmartphone, MdWeb } from "react-icons/md";
 import PersonaCarousel from "../components/Personas";
+import LazyLoad from "react-lazy-load";
 
 const ResponsiveIFrameContainer = styled.div`
   position: relative;
@@ -596,16 +597,18 @@ const IndexPage = () => (
 
       <ContentContainer wide>
         <h3>Pitch</h3>
-        <ResponsiveIFrameContainer>
-          <ResponsiveIFrame
-            src="https://www.icloud.com/keynote/0nNSSXm5rlCVRMAVkh5AlthNA?embed=true"
-            width="100%"
-            height="720"
-            frameBorder="0"
-            allowFullScreen
-            // referrer="no-referrer"
-          />
-        </ResponsiveIFrameContainer>
+        <LazyLoad height={720}>
+          <ResponsiveIFrameContainer>
+            <ResponsiveIFrame
+              src="https://www.icloud.com/keynote/0nNSSXm5rlCVRMAVkh5AlthNA?embed=true"
+              width="100%"
+              height="720"
+              frameBorder="0"
+              allowFullScreen
+              // referrer="no-referrer"
+            />
+          </ResponsiveIFrameContainer>
+        </LazyLoad>
       </ContentContainer>
     </PageWrapper>
   </Layout>
