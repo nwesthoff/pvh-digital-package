@@ -38,10 +38,18 @@ const PersonaContentContainer = styled.div`
     margin-bottom: 0;
   }
 
-  p {
-    margin-top: 0;
+  ul {
+    margin-top: 0.4rem;
+  }
+
+  li {
     font-size: 0.9em;
-    line-height: 1.2em;
+  }
+
+  p {
+    margin-top: 0.4rem;
+    font-size: 0.9em;
+    line-height: 1.5;
     color: inherit;
   }
 

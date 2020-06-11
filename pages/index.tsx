@@ -628,15 +628,46 @@ const IndexPage = () => (
     <PersonaCarousel />
     <PageWrapper>
       <ContentContainer>
-        <h3>Prototypes</h3>
+        <h3>How might we?</h3>
         <p>
+          Despite the rise of the sustainability movement, the majority of young
+          fast fashion lovers still just want{" "}
+          <a href="https://www.nytimes.com/2019/12/17/style/fast-fashion-gen-z.html">
+            cute, cheap outfits that look great on Instagram
+          </a>
+          . Even those who are concerned by environmental issues, still want to
+          look different every day — they don’t really want clothes that last
+          long (like 5–10 years).
+          <blockquote>
+            “Dresses become old when you’ve worn them twice”
+            <span className="quoteBy">Mia, 16, UK</span>
+          </blockquote>
           These key takeaways and the brief lead us to find our problem
-          statements:{" "}
+          statement:{" "}
           <b>
-            How might we make people have an endless wardrobe without owning
-            stuff?
+            How might we make people feel they have an endless wardrobe without
+            owning stuff?
           </b>
         </p>
+      </ContentContainer>
+      <ContentContainer>
+        <h3>Area of Opportunity</h3>
+        <p>
+          Designers are exploring the future of digital clothing.{" "}
+          <b>Digital Fashion</b> is the visual representation of clothes
+          designed and created using computer technologies and 3D softwares. As
+          our experts told us, there are two types of digital clothing, one is
+          'digitized' versions of regular clothes (they can be used in virtual
+          fitting rooms), and the other is conceptual clothes, which are
+          designed without the intention to produce them in real life. They can
+          be eccentric, extravagant, made of non-conventional materials like
+          cellulose, glass, metal, and sometimes they just don’t follow any
+          fashion rules and standards. We’re focusing mostly on the second type,
+          because it’s more about sustainability and less about consumerism.
+        </p>
+      </ContentContainer>
+      <ContentContainer>
+        <h3>Prototypes</h3>
         <p>
           With this insight and a section of PVH feedback we develop different
           ideas and prototypes.
