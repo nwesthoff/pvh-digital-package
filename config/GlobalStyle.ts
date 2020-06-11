@@ -98,6 +98,7 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: .4rem;
   }
 
   body {

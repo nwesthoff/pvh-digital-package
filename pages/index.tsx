@@ -10,6 +10,32 @@ import { MdSmartphone, MdWeb } from "react-icons/md";
 import PersonaCarousel from "../components/Personas";
 import LazyLoad from "react-lazy-load";
 
+const ThreeColumnDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap row;
+  margin: -1.2rem 0 0 -1.2rem;
+`;
+
+const Col = styled.div`
+  margin: 1.2rem 0 0 1.2rem;
+  flex-basis: 30%;
+  gap: 1.2rem;
+  flex-grow: 1;
+  min-width: 250px;
+
+  figcaption {
+    text-align: left;
+  }
+
+  img,
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+`;
+
 const ResponsiveIFrameContainer = styled.div`
   position: relative;
   overflow: hidden;
@@ -168,15 +194,15 @@ const IndexPage = () => (
           <li>
             DIGITAL CLOTHES: a solution to one of the world’s major eco problems
             might involve creating{" "}
-            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/fashion-design-phenomenons/&amp;sa=D&amp;ust=1591717797296000">
+            <a href="https://www.designboom.com/tag/fashion-design-phenomenons/&amp;sa=D&amp;ust=1591717797296000">
               clothes
             </a>{" "}
             that don’t actually exist.{" "}
-            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/fashion-technology/&amp;sa=D&amp;ust=1591717797297000">
+            <a href="https://www.designboom.com/tag/fashion-technology/&amp;sa=D&amp;ust=1591717797297000">
               Digital fashion
             </a>
             , which refers to 3D-rendered garments that only exist{" "}
-            <a href="https://www.google.com/url?q=https://www.designboom.com/tag/virtual-and-augmented-reality/&amp;sa=D&amp;ust=1591717797297000">
+            <a href="https://www.designboom.com/tag/virtual-and-augmented-reality/&amp;sa=D&amp;ust=1591717797297000">
               virtually
             </a>
             , is a very real idea that offers much greener, zero-waste
@@ -593,6 +619,113 @@ const IndexPage = () => (
           “I'd like to have such endless possibilities — it's freedom.”
           <span className="quoteBy">Ayrton, 24</span>
         </blockquote>
+      </ContentContainer>
+
+      <ContentContainer>
+        <h2>Feasibility</h2>
+        <p>
+          We see a few prerequisites for Manifest to succeed tech-wise. First,
+          relatively fast hardware is needed. Modern android phones are equipped
+          with{" "}
+          <a href="https://developers.google.com/ar/discover&amp;sa=D&amp;ust=1591880583380000">
+            ARCore
+          </a>
+          &nbsp;support and iPhones run{" "}
+          <a href="https://developer.apple.com/augmented-reality/&amp;sa=D&amp;ust=1591880583380000">
+            ARKit
+          </a>
+          &nbsp;and RealityKit. Both of these are already widely supported by 3D
+          render engines like Unity and Unreal, and even dedicated AR tools like{" "}
+          <a href="https://sparkar.facebook.com/ar-studio/&amp;sa=D&amp;ust=1591880583380000">
+            SparkAR
+          </a>
+          &nbsp;exist. These tools lower the barrier to market, and make
+          developing Instagram filters trivial.
+        </p>
+        <p>
+          However, digital fashion brings a few new issues. Currently applying
+          digital clothes to a photo require&nbsp;a lot of manual labor. Which
+          is caused by three things:
+        </p>
+        <ThreeColumnDiv>
+          <Col>
+            <h4>1. Body types</h4>
+            Body types vary, and physical clothes come in different sizes. To
+            realistically apply digital clothes to a photo, they have to match
+            the size and body shape of the subject.
+          </Col>
+          <Col>
+            <h4>2. Masking</h4>
+            Since part of the clothes realistically end up behind the subject,
+            the subject has to be isolated from the photo in order to
+            convincingly superimpose the model on the subject.
+          </Col>
+          <Col>
+            <h4>3. Draping</h4>
+            Textiles are flexible. They have to realistically drape over and
+            move with the subject of the photo.
+          </Col>
+        </ThreeColumnDiv>
+        <br />
+        <h3>Solutions</h3>
+        <p>To solve these issues, we suggest a few areas of development.</p>
+        <ThreeColumnDiv>
+          <Col>
+            <h4>1. Parametric</h4>
+            3D fashion has to be parametric; that means, driven by body
+            dimensions. These dimensions have to be inferred from the photo
+            being taken. It's likely necessary to take a few overview photos of
+            the subject before the software will be able to estimate dimensions.{" "}
+            <img alt="image8" src="img/image8.png" />
+          </Col>
+          <Col>
+            <h4>2. Subject Separation</h4>
+            Currently hardware isn't fast enough to separate a subject from the
+            background in realtime, but a static image is easy to process.
+            Services like{" "}
+            <a href="https://www.remove.bg/&amp;sa=D&amp;ust=1591880583381000">
+              remove.bg
+            </a>{" "}
+            go a long way to separate subjects. Services like these are likely
+            running on open source AI models to achieve pattern recognition like{" "}
+            <a href="https://github.com/NathanUA/U-2-Net&amp;sa=D&amp;ust=1591880583382000">
+              Uˆ2-Net
+            </a>
+            .
+          </Col>
+          <Col>
+            <h4>3. Real-time cloth simulation</h4>
+            Technologies regarding{" "}
+            <a href="https://www.youtube.com/watch?v=wtpPxLmiykk">
+              real-time cloth simulation
+            </a>
+            &nbsp;have come a long way. Which might be a solution, although we
+            foresee it could also be faked by 'pre-crumpling' for a few sizes,
+            which will then be slightly distorted and morphed to fit the subject
+            better.
+            <figure>
+              <video
+                src="/img/realtime-cloth-simulation.mp4"
+                autoPlay
+                muted
+                loop
+              />
+              <figcaption>
+                Video: nvidia real-time cloth simulation demo (
+                <a href="https://www.youtube.com/watch?v=wtpPxLmiykk">source</a>
+                )
+              </figcaption>
+            </figure>
+          </Col>
+        </ThreeColumnDiv>
+        <p>
+          To conclude, we're not saying this will be an easy feat. With this
+          section we hope to illustrate the current issues that need to be
+          solved, in order to give a better understanding of the road ahead. All
+          the parts to achieve the proposed solution are there, however, PVH
+          could be the one to bring it all together, to push the industry
+          forward.
+        </p>
       </ContentContainer>
 
       <ContentContainer wide>
