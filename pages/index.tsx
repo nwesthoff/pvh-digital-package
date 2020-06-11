@@ -299,62 +299,121 @@ const IndexPage = () => (
       <ContentContainer>
         <h2>Primary Research</h2>
         <p>
-          Over the weeks of work, we did deep interviews with 19 people from
-          different background as a 3D designer, digital influencer, owner of
-          futuristic clothes, young conscious people, B Corporations leader,
-          people from industry of retail, owner of thrift clothes, young social
-          media users, young psychologist, digital fashion designer, a guru of
-          community management and digital artist.
+          Over the weeks of work, we did deep interviews with 20 people from
+          various backgrounds. During the first week of primary research, we
+          spoke with users and experts in the field. We questioned broad issues
+          around fashion, sustainability and the behaviour of buying and
+          selling.
         </p>
+        <h3>User Research</h3>
         <p>
-          In the first week of primary research, we talked with users and
-          experts in the field and questioned broad issues around fashion,
-          sustainability, the behaviour of buying and selling. As a summary of
-          the result of their thoughts, we found these key takeaways.
+          Our user research was done with a spread of young conscious people to
+          (slightly less young) avid shoppers. To summarize their thoughts, we
+          found these key takeaways.
         </p>
-        <h4>1. Digital & physical fashion are converging</h4>
+        <h4>Challenges which digital fashion face</h4>
+        <ul>
+          <li>
+            Currently, the most prevalent use-case is just trying something new.
+            The future might take it mainstream.
+          </li>
+          <li>
+            People don't like the idea of wearing basic digital stuff by
+            mass-market brands.
+          </li>
+        </ul>
+        <h4>
+          Desire to support small, local and independent businesses/designers
+        </h4>
+        <ul>
+          <li>
+            Prefers to buy from local stores, micro manufacturers. The quality
+            is perceived as better, and supports value-driven businesses.
+          </li>
+        </ul>
+        <h4>Behaviour paradox: minimalism x impulse to buy</h4>
+        <ul>
+          <li>Following minimalism isn't easy, you need to be creative.</li>
+          <li>
+            Even heavy consumers see that maybe living on less would be better.
+          </li>
+          <li>People buy for pleasure. It's an impulsive decision.</li>
+        </ul>
+        <h4>Value and Sustainability at the core level</h4>
+        <ul>
+          <li>
+            Sustainability is not only about the manufacturing process. It's
+            also about values you translate.
+          </li>
+          <li>It's necessary to change the measurement of success.</li>
+          <li>
+            Companies have to create a mission that has sustainability at the
+            core.
+          </li>
+          <li>
+            The challenge of B Corps certification is to break the bubble and
+            reach other companies (that the core business is questionable).
+          </li>
+        </ul>
+        <h4>Ways to increase the physical and fashion life-span of clothes</h4>
+        <ul>
+          <li>Clothes that you can recolour every year</li>
+          <li>
+            Functional clothing with a lifetime warranty is ok. But I want to
+            look different with my day-to-day clothing.
+          </li>
+        </ul>
+        <h4>The needs addressed by fashion</h4>
+        <ul>
+          <li>
+            The way you dress expresses not only your aesthetic preferences but
+            also your beliefs
+          </li>
+          <li>Fun to have a nice spectrum of colours on your body.</li>
+        </ul>
+        <h3>Expert Interviews</h3>
+        <p>
+          For our expert interviews we spoke with digital fashion designers,
+          digital influencers, a young psychologist, a leader of B-Corps, people
+          from the retail industry, owner of thrift clothes, a guru of community
+          management and a digital artist. See the following summary, which is a
+          result of their view on the problems around the fashion industry.
+        </p>
+        <h4>Digital & physical fashion are converging</h4>
         <ul>
           <li>
             You can show that you belong to a certain subculture with digital
             clothes.
           </li>
           <li>
-            Spark AR with new computer vision technology gives a lot of freedom
-            to actually merge physical clothing and digital extras from brands.
+            Tools like SparkAR offer new computer vision technologies that give
+            a lot of freedom to merge physical clothing and digital extras from
+            brands with the real world.
           </li>
         </ul>
-        <h4>2. Challenges which digital fashion face</h4>
+        <h4>Challenges which digital fashion face</h4>
         <ul>
-          <li>You can not touch and sense digital clothes.</li>
-          <li>
-            Now: the main motivation is just trying something new. Future:
-            mainstream.
-          </li>
-          <li>
-            People don't like the idea of wearing basic digital stuff by
-            mass-market brands.
-          </li>
-          <li>
-            Digital fashion will remain niche and artsy if it will not be
-            promoted by big brands.
-          </li>
           <li>
             It's manual labour now: you design the personalized piece of
             clothing and then fit it to the photo, considering the light
             sources, etc.
           </li>
+          <li>
+            Digital fashion will remain niche and artsy if it will not be
+            promoted by big brands.
+          </li>
+          <li>You can not touch and sense digital clothes.</li>
         </ul>
-        <h4>3. Shifting to a digital-first approach</h4>
+        <h4>Shifting to a digital-first approach</h4>
         <ul>
           <li>Now it's mostly manual labour, but the future is AI.</li>
           <li>
             If fashion brands will apply a digital-first approach, they can do
             more inclusive digital fashion shows.
           </li>
-          <li>Fun to have a nice spectrum of colours on your body.</li>
         </ul>
         <h4>
-          4. Digital as an eco-friendly & accessible alternative to physical
+          Digital as an eco-friendly & accessible alternative to physical
           fashion
         </h4>
         <ul>
@@ -368,7 +427,7 @@ const IndexPage = () => (
           </li>
           <li>Digital fashion as a subscription: several looks per month.</li>
         </ul>
-        <h4>5. DIY going mainstream?</h4>
+        <h4>DIY going mainstream?</h4>
         <ul>
           <li>
             Imagine that you can make shorts out of your jeans, and it's planned
@@ -376,22 +435,18 @@ const IndexPage = () => (
           </li>
           <li>Handmade clothes are really easy to sell.</li>
         </ul>
-        <h4>6. Second-hand clothes: exclusivity and sustainability</h4>
+        <h4>Second-hand clothes: exclusivity and sustainability</h4>
         <ul>
           <li>
             More and more people are moving towards the sustainable side, more
-            and more people are caring about these issues.
+            and more people care about these issues.
           </li>
           <li>Second-hand fashion is: elegance and exclusivity.</li>
         </ul>
         <h4>
-          7. Desire to support small, local and independent businesses/designers
+          Desire to support small, local and independent businesses/designers
         </h4>
         <ul>
-          <li>
-            Prefers to buy from Local - micro manufacturers - quality better,
-            and support value-driven businesses.
-          </li>
           <li>
             Small companies with a strong culture can boost big players in the
             industry.
@@ -400,9 +455,7 @@ const IndexPage = () => (
             Secondary production is eco and on the edge, but you can't scale it.
           </li>
         </ul>
-        <h4>
-          8. Potential roles of brands to transition to sustainable options
-        </h4>
+        <h4>Potential roles of brands to transition to sustainable options</h4>
         <ul>
           <li>
             Future is personal, brands will gather data about us and offer
@@ -413,47 +466,11 @@ const IndexPage = () => (
             What about a brand that can speak directly to you as a friend?
           </li>
         </ul>
-        <h4>9. Behaviour paradox: minimalism x impulse to buy</h4>
-        <ul>
-          <li>Following minimalism isn't easy, you need to be creative.</li>
-          <li>Maybe living on less would be better.</li>
-          <li>People buy for pleasure and impulse.</li>
-        </ul>
-        <h4>10. Value and Sustainability at the core level</h4>
+        <h4>The needs addressed by fashion</h4>
         <ul>
           <li>
-            Sustainability is not only about the manufacturing process. It's
-            also about values you translate.
-          </li>
-          <li>Necessary to change the measurement of success.</li>
-          <li>
-            Companies have to create a mission that has sustainability at the
-            core.
-          </li>
-          <li>
-            The challenge of B Corps certification is to break the bubble and
-            reach other companies (that the core business is questionable).
-          </li>
-        </ul>
-        <h4>
-          11. Ways to increase the physical and fashion life-span of clothes
-        </h4>
-        <ul>
-          <li>Clothes that you can recolour every year</li>
-          <li>
-            Functional clothing with a lifetime warranty is ok. But I want to
-            look different with my day-to-day clothing
-          </li>
-        </ul>
-        <h4>12. The needs addressed by fashion</h4>
-        <ul>
-          <li>
-            The way you dress expresses not only your aesthetic preferences but
-            also your beliefs
-          </li>
-          <li>
-            For me fashion is content, it's a story I consume and expose to
-            others. It's like watching a movie or reading a book
+            Fashion is content. It's a story being consumed and exposed to
+            others. It's similar to watching a movie or reading a book.
           </li>
         </ul>
       </ContentContainer>
