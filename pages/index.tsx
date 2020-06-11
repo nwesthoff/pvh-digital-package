@@ -512,7 +512,13 @@ const IndexPage = () => (
           subscription to use exclusive pieces.
         </p>
         <figure>
-          <video src="/img/digital-fashion-prototype.mp4" autoPlay muted loop />
+          <video
+            src="/img/digital-fashion-prototype.mp4"
+            autoPlay
+            muted
+            loop
+            controls={true}
+          />
           <figcaption>Video: Our prototype to test Digital Fashion</figcaption>
         </figure>
         <p>
