@@ -12,6 +12,24 @@ import PersonaCarousel from "../components/Personas";
 import LazyLoad from "react-lazy-load";
 import ImageCarousel from "../components/ImageCarousel";
 
+const TableOfContents = styled.ul`
+  list-style: none;
+  padding-left: 0;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: ${theme.colors.primary};
+    }
+  }
+
+  li {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+`;
+
 const ThreeColumnDiv = styled.div`
   display: flex;
   justify-content: space-between;
@@ -125,7 +143,38 @@ const IndexPage = () => (
       </PageIntroduction>
 
       <ContentContainer>
-        <h2>Secondary research</h2>
+        <h2>Table of Contents</h2>
+        <TableOfContents>
+          <li>
+            <a href="#2nd-research">Secondary research</a>
+          </li>
+
+          <li>
+            <a href="#1st-research">Primary research</a>
+          </li>
+          <li>
+            <a href="#personas">Personas</a>
+          </li>
+          <li>
+            <a href="#prototypes">Prototypes</a>
+          </li>
+          <li>
+            <a href="#solution">Solution</a>
+          </li>
+          <li>
+            <a href="#feasibility">Feasibility</a>
+          </li>
+          <li>
+            <a href="#pitch">Pitch</a>
+          </li>
+          <li>
+            <a href="#conclusion">Last words</a>
+          </li>
+        </TableOfContents>
+      </ContentContainer>
+
+      <ContentContainer>
+        <h2 id="2nd-research">Secondary research</h2>
         <p>
           The point of this secondary research was to collect data that deepens
           our understanding of the problem space.
@@ -453,7 +502,7 @@ const IndexPage = () => (
       </ContentContainer>
 
       <ContentContainer>
-        <h2>Primary Research</h2>
+        <h2 id="1st-research">Primary Research</h2>
         <p>
           Over the weeks of work, we did deep interviews with 20 people from
           various backgrounds. During the first week of primary research, we
@@ -631,7 +680,7 @@ const IndexPage = () => (
         </ul>
       </ContentContainer>
       <ContentContainer>
-        <h2>Personas</h2>
+        <h2 id="personas">Personas</h2>
         <p>
           From these insights, we created 3 personas. They summarised our
           research, and helped us design a solution that matches the research we
@@ -690,7 +739,7 @@ const IndexPage = () => (
         </LinkButton>
       </ContentContainer>
       <ContentContainer>
-        <h2>Prototypes</h2>
+        <h2 id="prototypes">Prototypes</h2>
         <p>
           With this insight and a section of PVH feedback, we develop different
           ideas and prototypes.
@@ -904,12 +953,16 @@ const IndexPage = () => (
             </blockquote>
           </li>
         </ol>
-        <h3>Prototype 3: Manifest</h3>
+      </ContentContainer>
+      <ContentContainer>
+        <h2 id="solution">Solution</h2>
+        <p>After incorporating the feedback, we created our final solution.</p>
+        <h3>Manifest</h3>
         <p>
-          After incorporating the feedback, we created our final solution.{" "}
-          <b>Manifest</b>: a digital fashion platform for real-life impact.
+          Manifest is a digital fashion platform for real-life impact.
           Connecting causes and an endless wardrobe, so what you wear becomes a
-          statement.
+          statement. To illustrate what is does, we also created a third and
+          final prototype.
         </p>
         <p>
           Play with:{" "}
@@ -930,11 +983,12 @@ const IndexPage = () => (
             controls={true}
           />
           <figcaption>
-            Video: Our prototype that drives social impact through digital
-            fashion
+            Video: Our final prototype, a platform that drives social impact
+            through digital fashion
           </figcaption>
         </figure>
-
+        <h4>Feedback</h4>
+        <p>This is what our peers said about it after the pitch.</p>
         <blockquote className="small">
           “You guys are solving a real problem.”
           <span className="quoteBy">Wes</span>
@@ -946,7 +1000,7 @@ const IndexPage = () => (
       </ContentContainer>
 
       <ContentContainer>
-        <h2>Feasibility</h2>
+        <h2 id="feasibility">Feasibility</h2>
         <p>
           We see a few prerequisites for Manifest to succeed tech-wise. First,
           relatively fast hardware is needed. Modern android phones are equipped
@@ -1062,7 +1116,7 @@ const IndexPage = () => (
       </ContentContainer>
 
       <ContentContainer wide>
-        <h3>Pitch</h3>
+        <h2 id="pitch">Pitch</h2>
         <LazyLoad height={720}>
           <ResponsiveIFrameContainer>
             <ResponsiveIFrame
@@ -1077,7 +1131,7 @@ const IndexPage = () => (
         </LazyLoad>
       </ContentContainer>
       <ContentContainer>
-        <h2>Last words</h2>
+        <h2 id="conclusion">Last words</h2>
         <p>
           If you're done reading everything, and still curious, we have made all
           of our research available on our Miro board:
