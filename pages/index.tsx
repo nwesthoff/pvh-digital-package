@@ -987,6 +987,48 @@ const IndexPage = () => (
             through digital fashion
           </figcaption>
         </figure>
+        <p>
+          <br />
+          We would like to see a variety of products on Manifest, with a variety
+          of use cases, created by different entities:
+        </p>
+        <ul>
+          <li>
+            We imagine big brands could sample their ideas digitally, to test
+            user adoption before they start fabrication.
+          </li>
+          <li>
+            We envision independent digital fashion artists like{" "}
+            <a href="https://replicant.fashion/passgoaltriple/">
+              PassGoalTriple
+            </a>{" "}
+            reaching a larger audience with their experimental creations.
+          </li>
+          <li>
+            We imagine that established brands would like to put out certain
+            products for free, connected to an AR experience that drive social
+            impact through their name. We could (for example) ask Patagonia to
+            create a special item, which they will share with Manifest users for
+            free after they complete their hike challenge.
+          </li>
+          <li>
+            We want people not only to donate to causes they care about, but be
+            proud to show their support, by giving them a digital artefact to
+            represent that. A suggested donation of $5,- could be a minimum, but
+            we could allow users to donate more. Upon finishing their donation,
+            it will now show up in their wardrobe, from which they'll be able to
+            share a photo with their new digital piece of clothes.
+          </li>
+        </ul>
+        <p>
+          These items show up in the inventory, where users will see items that
+          stay permanently, as well as items that expire (like the super puffer
+          in our prototype). Items that have already expired, are swappable for
+          new item with people on the platform for free. By this we’re promoting
+          the idea of swapping clothes with the community in digital as well as
+          real life.
+        </p>
+
         <h4>Feedback</h4>
         <p>This is what our peers said about it after the pitch.</p>
         <blockquote className="small">
